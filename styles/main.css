@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  color: #2d3339;
+  font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  text-align: center;
+  background: url('/bg.jpeg');
+  background-size: cover;
+  font-size: 16px; }
+
+a {
+  color: #3f8abf;
+  text-decoration: none; }
+  a:hover {
+    color: #65a1cc; }
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+  font-size: 150px;
+  letter-spacing: 3px;
+  margin-top: 75px;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 100;
+}
+
+.shader {
+  margin: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0));
+  z-index: -1;
+}
+
+.list {
+  z-index: 100;
+  background: #fff;
+  width: 80%;
+  min-width: 500px;
+  margin: 80px auto 0;
+  border-top: 40px solid #5a6772;
+  text-align: left; }
+  .list .item {
+    border-bottom: 2px solid #edeff0;
+    padding: 17px 0 18px 17px; }
+    .list .item label {
+      padding-left: 5px;
+      min-width: 100%;
+      cursor: pointer; }
+    .list .item .editing-label {
+      margin-left: 5px;
+      border-radius: 2px;
+      border: 2px solid #a7b9c4;
+      font-size: 16px;
+      padding: 10px;
+      width: 60%; }
+    .list .item .actions {
+      float: right;
+      margin-right: 20px; }
+      .list .item .actions .delete {
+        color: #ed5a5a;
+        margin-left: 10px; }
+        .list .item .actions .delete:hover {
+          color: #f28888; }
+    .list .item.editing-item .actions {
+      margin-top: 17px; }
+  .list .edited label:after {
+    content: " edited";
+    text-transform: uppercase;
+    color: #a7b9c4;
+    font-size: 14px;
+    padding-left: 5px; }
+  .list .completed label {
+    color: #a7b9c4;
+    text-decoration: line-through; }
+  .list .add {
+    padding: 25px 0 27px 25px; }
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(checkbox-empty.svg) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + span {
+    background:url(checkbox-filled.svg) left top no-repeat;
+}
